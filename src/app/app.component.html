@@ -1,0 +1,17 @@
+<div>
+  <input [(ngModel)]="username" placeholder="Enter GitHub username" />
+  <button (click)="fetchData()">Fetch Repositories</button>
+</div>
+
+<div>
+  <input 
+    type="text" 
+    placeholder="Search repositories..." 
+    (input)="onSearchInputChange($event)" 
+  />
+</div>
+
+<app-repo-grid [rowData]="repositories"></app-repo-grid>
+<app-bar-chart [data]="repositories | transform: getChartData"></app-bar-chart>
+
+
