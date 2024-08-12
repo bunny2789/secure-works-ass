@@ -20,7 +20,7 @@ import { TransformPipe } from './pipes/transform.pipe';
   selector: 'app-root',
   standalone: true,
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  styleUrls: ['./app.component.scss'],
   imports: [
     BrowserModule,
     HttpClientModule,

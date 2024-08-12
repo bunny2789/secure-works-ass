@@ -5,7 +5,7 @@ import * as d3 from 'd3';
   selector: 'app-bar-chart',
   standalone: true,
   templateUrl: './bar-chart.component.html',
-  styleUrls: ['./bar-chart.component.css']
+  styleUrls: ['./bar-chart.component.scss']
 })
 export class BarChartComponent implements AfterViewInit {
   @Input() data: { name: string; value: number }[] = [];
